@@ -45,9 +45,9 @@ export default function SideRight(props) {
         )}
 
         {/* 联系交流群 */}
-        <div className='wow fadeInUp'>
+        {/* <div className='wow fadeInUp'>
           <TouchMeCard />
-        </div>
+        </div> */}
 
         {/* 最新文章列表 */}
         <div
@@ -60,17 +60,17 @@ export default function SideRight(props) {
         {rightAreaSlot}
 
         <FaceBookPage />
-        <Live2D />
+        {/* <Live2D /> */}
 
         {/* 标签和成绩 */}
-        <Card
+        {/* <Card
           className={
             'bg-white dark:bg-[#1e1e1e] dark:text-white hover:border-indigo-600  dark:hover:border-yellow-600 duration-200'
           }>
           <TagGroups tags={sortedTags} currentTag={currentTag} />
           <hr className='mx-1 flex border-dashed relative my-4' />
           <AnalyticsCard {...props} />
-        </Card>
+        </Card> */}
       </div>
     </div>
   )

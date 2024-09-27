@@ -93,7 +93,7 @@ function Banner(props) {
       <TagsGroupBar />
 
       {/* 遮罩 */}
-      <div
+      {/* <div
         id='banner-cover'
         style={{ backdropFilter: 'blur(15px)' }}
         className={
@@ -105,7 +105,7 @@ function Banner(props) {
             <ArrowSmallRight className={'w-24 h-24 stroke-2'} />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
@@ -370,6 +370,8 @@ function TodayCard({ cRef, siteInfo }) {
             </div>
             <div className='text-3xl font-bold'>
               {siteConfig('HEO_HERO_TITLE_5', null, CONFIG)}
+              <br />
+              {siteConfig('HEO_HERO_TITLE_6', null, CONFIG)}
             </div>
           </div>
           {/* 查看更多的按钮 */}
@@ -383,6 +385,7 @@ function TodayCard({ cRef, siteInfo }) {
               }
             />
             <div id='more' className='select-none'>
+              {console.log(locale)}
               {locale.COMMON.RECOMMEND_POSTS}
             </div>
           </div>
